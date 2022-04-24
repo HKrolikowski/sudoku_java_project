@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="24" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.comp.view.Menu">
+    <padding>
+        <Insets bottom="15" left="20" right="20" top="20" />
+    </padding>
+    <Label fx:id="titleLabel" contentDisplay="CENTER" text="%_title" VBox.vgrow="ALWAYS">
+        <VBox.margin>
+            <Insets bottom="100" />
+        </VBox.margin>
+    </Label>
+    <HBox alignment="CENTER">
+        <children>
+            <Label fx:id="difficultyText" contentDisplay="CENTER" text="%_Difficulty" textOverrun="WORD_ELLIPSIS">
+                <HBox.margin>
+                    <Insets />
+                </HBox.margin>
+            </Label>
+            <Separator opacity="0" orientation="VERTICAL" visible="false" />
+            <ChoiceBox fx:id="difficultyOption" prefHeight="50" prefWidth="150">
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </ChoiceBox>
+        </children>
+        <VBox.margin>
+            <Insets bottom="10" />
+        </VBox.margin>
+    </HBox>
+
+    <Button fx:id="start" onAction="#onStartButtonClick" prefHeight="17" prefWidth="100" text="%_buttonPlay">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+        <VBox.margin>
+            <Insets top="0" />
+            <Insets bottom="0" />
+        </VBox.margin>
+        <padding>
+            <Insets bottom="5" left="10" right="10" top="5" />
+        </padding>
+    </Button>
+    <HBox alignment="CENTER">
+        <ListView fx:id="listViewDatabase" maxHeight="45" maxWidth="1.7976931348623157E308" prefWidth="150" />
+        <Separator opacity="0" orientation="VERTICAL" visible="false" />
+        <Button fx:id="loadSudokuDatabase" onAction="#onLoadSudokuDatabaseButtonClick" prefHeight="39.0" prefWidth="150" text="%_buttonLoadDatabase">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <padding>
+                <Insets bottom="5" left="10" right="10" top="5" />
+            </padding>
+        </Button>
+    </HBox>
+
+    <Button fx:id="loadSudoku" onAction="#onLoadSudokuButtonClick" prefHeight="39.0" prefWidth="150" text="%_buttonLoad">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+        <padding>
+            <Insets bottom="5" left="10" right="10" top="5" />
+        </padding>
+    </Button>
+
+    <HBox alignment="CENTER">
+        <children>
+            <Label fx:id="languageText" contentDisplay="LEFT" text="%_Language" textOverrun="WORD_ELLIPSIS">
+                <HBox.margin>
+                    <Insets />
+                </HBox.margin>
+            </Label>
+            <Separator opacity="0" orientation="VERTICAL" visible="false" />
+            <ChoiceBox fx:id="languageOption" prefHeight="20" prefWidth="150">
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </ChoiceBox>
+            <Separator opacity="0" orientation="VERTICAL" prefWidth="10" visible="false" />
+
+            <Button fx:id="confirmLanguage" onAction="#onConfirmLanguageButtonClick" prefHeight="0" prefWidth="100" text="%_buttonConfirm">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <padding>
+                <Insets bottom="5" left="10" right="10" top="5" />
+            </padding>
+        </Button>
+        </children>
+    </HBox>
+    <HBox alignment="CENTER">
+        <children>
+            <Separator opacity="0" orientation="VERTICAL" prefWidth="300" visible="false" />
+            <Label fx:id="authors" contentDisplay="RIGHT" prefWidth="320" text="%_Authors" VBox.vgrow="ALWAYS">
+                <VBox.margin>
+                    <Insets right="10" />
+                    <Insets bottom="0" />
+                </VBox.margin>
+                <padding>
+                    <Insets left="20" right="20" />
+                </padding>
+            </Label>
+        </children>
+    </HBox>
+
+
+
+</VBox>

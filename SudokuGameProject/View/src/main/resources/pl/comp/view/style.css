@@ -1,0 +1,119 @@
+.root
+{
+    -fx-background-image: url("tlo1.png");
+    -fx-background-color: #0B0608;
+}
+
+#authors{
+    -fx-border-color: #064905;
+    -fx-border-width: 3;
+    -fx-font-family: "Comic Sans MS";
+    -fx-text-fill: #188300;
+    -fx-background-color: #03d738;
+    -fx-border-radius: 5;
+}
+
+#start, #loadSudoku, #loadSudokuDatabase, #comingBack, #saveSudokuDatabase, #saveSudoku, #checkSudoku {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#05e538, #05e538),
+            linear-gradient(#05e538, #05e538),
+            linear-gradient(#05e538, #05e538);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 10 12 10;
+    -fx-text-fill: #059626;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+#confirmLanguage {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#05e538, #05e538),
+            linear-gradient(#05e538, #05e538),
+            linear-gradient(#05e538, #05e538);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 5 5 5 5;
+    -fx-text-fill: #059626;
+    -fx-font-weight: bold;
+    -fx-font-size: 10px;
+}
+
+#start:hover, #loadSudoku:hover, #comingBack:hover, #saveSudoku:hover, #confirmLanguage:hover, #checkSudoku:hover{
+    -fx-background-color:
+            linear-gradient(#f2f2f2, #d6d6d6),
+            linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+            linear-gradient(#dddddd 0%, #f6f6f6 50%);
+    -fx-background-radius: 8,7,6;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: #059626FF;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.grid > * {
+    -fx-min-height: 50px;
+    -fx-min-width: 50px;
+    -fx-max-height: 50px;
+    -fx-max-width: 50px;
+    -fx-alignment: center;
+    -fx-font-size: 40px;
+    -fx-padding: 0 5 5 5;
+}
+
+.grid Line {
+    -fx-stroke: #0dd005;
+    -fx-stroke-width: 3px;
+}
+
+.grid {
+    -fx-grid-lines-visible: true;}
+
+#difficultyOption{
+    -fx-background-color:
+            #059f9f,
+            linear-gradient(#30ea09 50%, rgba(0, 255, 34, 0.78) 100%),
+            radial-gradient(center 50% -40%, radius 200%, #2eea03 45%, rgba(38, 133, 31, 0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: #059626;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+
+#titleLabel, #winnerLabel{
+    -fx-font-weight: bold;
+    -fx-font-size: 50;
+    -fx-font-family: "Arial Black";
+    -fx-text-fill: #059626;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+#difficultyText{
+    -fx-font-weight: bold;
+    -fx-font-size: 23;
+    -fx-font-family: "Arial Black";
+    -fx-text-fill: #059626;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+#languageOption{
+    -fx-background-color:
+            #059f9f,
+            linear-gradient(#30ea09 50%, rgba(0, 255, 34, 0.78) 100%),
+            radial-gradient(center 50% -40%, radius 200%, #2eea03 45%, rgba(38, 133, 31, 0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: #059626;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+
+#languageText{
+    -fx-font-weight: bold;
+    -fx-font-size: 10;
+    -fx-font-family: "Arial Black";
+    -fx-text-fill: #059626;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
