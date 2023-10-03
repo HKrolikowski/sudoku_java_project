@@ -1,2 +1,2 @@
 # SudokuJavaProject
-Aplikacja Sudoku napisana w języku JAVA
+Sudoku app with use of Java and JavaFX
